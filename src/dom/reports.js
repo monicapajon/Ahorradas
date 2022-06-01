@@ -1,4 +1,3 @@
-const body = document.body;
 const sectionReport = document.createElement("section");
 sectionReport.className = "section mt-5 ";
 sectionReport.id = "vista-reportes";

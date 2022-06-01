@@ -1,7 +1,5 @@
 //categories//
 
-const body = document.body;
-
 const sectionCategory = document.createElement("section");
 sectionCategory.className = "section mt-5";
 sectionCategory.id = "vista-categoria";
@@ -49,7 +47,6 @@ button.textContent = "Agregar";
 const divAddCategory = document.createElement("div");
 divAddCategory.className = "mt-6";
 divAddCategory.id = "categorias";
-
 
 //appendchild category//
 body.appendChild(sectionCategory);

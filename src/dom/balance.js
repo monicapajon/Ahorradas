@@ -1,5 +1,3 @@
-const body = document.body;
-
 const sectionBalance = document.createElement("section");
 sectionBalance.className = "section mt-5 vista";
 sectionBalance.id = "vista-balance";
