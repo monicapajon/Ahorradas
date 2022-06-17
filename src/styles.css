@@ -1,0 +1,9 @@
+.buttons {
+    justify-content: flex-end;
+  }
+  .image {
+    max-width: 350px;
+    margin: 0 auto;
+    opacity: 0.8;
+  }
+  
