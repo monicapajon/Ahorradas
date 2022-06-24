@@ -1,9 +1,10 @@
+const bReport = document.body;
 const sectionReport = document.createElement("section");
-sectionReport.className = "section mt-5 ";
+sectionReport.className = "section mt-5 is-hidden vista";
 sectionReport.id = "vista-reportes";
 
-const divContainer = document.createElement("div");
-
+const divContRep = document.createElement("div");
+divContRep.className = "container";
 const divColumns = document.createElement("div");
 divColumns.className = "columns";
 const divColumn = document.createElement("div");
@@ -31,7 +32,7 @@ titleOperInf.textContent = " Operaciones Insuficientes";
 
 const parrafReport = document.createElement("p");
 parrafReport.className = "has-text-centered";
-parrafReport.textContent = " Prueba Agregando más Operaciones";
+parrafReport.textContent = "Prueba agregando más operaciones";
 
 // Resumen //
 
@@ -116,10 +117,12 @@ divColmMesMayGan1.textContent = "Mes con mayor ganancia";
 
 const divColmMesMayGan2 = document.createElement("div");
 divColmMesMayGan2.className = "column is-3 has-text-right";
+divColmMesMayGan2.id = "mes-mayor-ganancia";
 
 const divColmMesMayGan3 = document.createElement("div");
 divColmMesMayGan3.className =
-  "column is-3 has-text-weight-semibold has-text-right has-text-danger";
+  "column is-3 has-text-weight-semibold has-text-right has-text-success";
+divColmMesMayGan3.id = "mes-mayor-ganancia-monto";
 
 const divColums5MesMayGas = document.createElement("div");
 divColums5MesMayGas.className = "columns is-mobile";
@@ -130,10 +133,12 @@ divColmMesMayGas1.textContent = "Mes con mayor gasto";
 
 const divColmMesMayGas2 = document.createElement("div");
 divColmMesMayGas2.className = "column is-3 has-text-right";
+divColmMesMayGas2.id = "mes-mayor-gasto";
 
 const divColmMesMayGas3 = document.createElement("div");
 divColmMesMayGas3.className =
   "column is-3 has-text-weight-semibold has-text-right has-text-danger";
+divColmMesMayGas3.id = "mes-mayor-gasto-monto";
 
 const sectionResumen2 = document.createElement("section");
 sectionResumen2.className = "section mb-5";
@@ -143,6 +148,7 @@ titleTotCat.className = "title is-size-4 mb-5 pb-4";
 titleTotCat.textContent = "Totales por Categorías";
 
 const divTotCat = document.createElement("div");
+divTotCat.id = "reporte-categorias";
 
 const sectionResumen3 = document.createElement("section");
 sectionResumen3.className = "section";
@@ -152,10 +158,11 @@ titleTotMes.className = "title is-size-4 mb-5 pb-4";
 titleTotMes.textContent = "Totales por Mes";
 
 const divTotMes = document.createElement("div");
+divTotMes.id = "reporte-mes";
 
-body.appendChild(sectionReport);
-sectionReport.appendChild(divContainer);
-divContainer.appendChild(divColumns);
+bReport.appendChild(sectionReport);
+sectionReport.appendChild(divContRep);
+divContRep.appendChild(divColumns);
 divColumns.appendChild(divColumn);
 divColumn.appendChild(divBoxReport);
 divBoxReport.appendChild(titleReport);
