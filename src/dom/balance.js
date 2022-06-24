@@ -1,3 +1,4 @@
+const addBal = document.body;
 const sectionBalance = document.createElement("section");
 sectionBalance.className = "section mt-5 vista";
 sectionBalance.id = "vista-balance";
@@ -61,6 +62,7 @@ const divAnchorFil = document.createElement("div");
 divAnchorFil.className = "column has-text-right";
 const anchorFiltro = document.createElement("A");
 anchorFiltro.href = "#";
+anchorFiltro.id = "toggle-filtros";
 anchorFiltro.textContent = "Ocultar Filtros";
 
 const divMainTipo = document.createElement("div");
@@ -81,13 +83,13 @@ selectTipo.id = "filtro-tipo";
 const optionTodos = document.createElement("option");
 optionTodos.value = "TODOS";
 optionTodos.textContent = "Todos";
-const optionGasto = document.createElement("option");
-optionGasto.value = "GASTO";
-optionGasto.textContent = "Gasto";
+const optionGast = document.createElement("option");
+optionGast.value = "GASTO";
+optionGast.textContent = "Gasto";
 
-const optionGanancia = document.createElement("option");
-optionGanancia.value = "GANANCIA";
-optionGanancia.textContent = "Ganancia";
+const optionGanBal = document.createElement("option");
+optionGanBal.value = "GANANCIA";
+optionGanBal.textContent = "Ganancia";
 
 const divMainCategoria = document.createElement("div");
 divMainCategoria.className = "field";
@@ -112,18 +114,18 @@ optionCat.textContent = "Servicios";
 
 const divMainDate = document.createElement("div");
 divMainDate.className = "field";
-const labelDate = document.createElement("label");
-labelDate.className = "label";
-labelDate.htmlFor = "filtro-fecha";
-labelDate.textContent = "Desde";
-const divControlDate = document.createElement("div");
-divControlDate.className = "control";
-const divInputDate = document.createElement("div");
-divInputDate.className = "is-fullwidth";
-const inputDate = document.createElement("input");
-inputDate.className = " input";
-inputDate.type = "date";
-inputDate.id = "filtro-fecha";
+const labelBalDate = document.createElement("label");
+labelBalDate.className = "label";
+labelBalDate.htmlFor = "filtro-fecha";
+labelBalDate.textContent = "Desde";
+const divBalDate = document.createElement("div");
+divBalDate.className = "control";
+const divInBalDate = document.createElement("div");
+divInBalDate.className = "is-fullwidth";
+const inBalDate = document.createElement("input");
+inBalDate.className = " input";
+inBalDate.type = "date";
+inBalDate.id = "filtro-fecha";
 
 const divMainOrden = document.createElement("div");
 divMainOrden.className = "field";
@@ -218,7 +220,7 @@ parrafOp.textContent = "Cambia los filtros o agrega operaciones";
 
 //appendchilds//
 
-body.appendChild(sectionBalance);
+addBal.appendChild(sectionBalance);
 sectionBalance.appendChild(containerBal);
 containerBal.appendChild(DivMainColumns);
 DivMainColumns.appendChild(divMainBal);
@@ -248,8 +250,8 @@ divTipo.appendChild(divControlTipo);
 divControlTipo.appendChild(divSelectTipo);
 divSelectTipo.appendChild(selectTipo);
 selectTipo.appendChild(optionTodos);
-selectTipo.appendChild(optionGasto);
-selectTipo.appendChild(optionGanancia);
+selectTipo.appendChild(optionGast);
+selectTipo.appendChild(optionGanBal);
 
 divBoxFil.appendChild(divMainCategoria);
 divMainCategoria.appendChild(labelCategoria);
@@ -259,10 +261,10 @@ divSelectCat.appendChild(selectCat);
 selectCat.appendChild(optionCat);
 
 divBoxFil.appendChild(divMainDate);
-divMainDate.appendChild(labelDate);
-divMainDate.appendChild(divControlDate);
-divControlDate.appendChild(divInputDate);
-divInputDate.appendChild(inputDate);
+divMainDate.appendChild(labelBalDate);
+divMainDate.appendChild(divBalDate);
+divBalDate.appendChild(divInBalDate);
+divInBalDate.appendChild(inBalDate);
 
 divBoxFil.appendChild(divMainOrden);
 divMainOrden.appendChild(labelOrden);
