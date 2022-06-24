@@ -1,7 +1,7 @@
 //categories//
-
+const bCategory = document.body;
 const sectionCategory = document.createElement("section");
-sectionCategory.className = "section mt-5";
+sectionCategory.className = "section mt-5 is-hidden vista";
 sectionCategory.id = "vista-categoria";
 
 const containerCategory = document.createElement("div");
@@ -49,7 +49,7 @@ divAddCategory.className = "mt-6";
 divAddCategory.id = "categorias";
 
 //appendchild category//
-body.appendChild(sectionCategory);
+bCategory.appendChild(sectionCategory);
 sectionCategory.appendChild(containerCategory);
 containerCategory.appendChild(category1);
 category1.appendChild(category2);
