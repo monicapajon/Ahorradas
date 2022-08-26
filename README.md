@@ -1,4 +1,4 @@
-h1 <align="center"><img src="https://www.bootgum.com/wp-content/uploads/2018/07/Wallet_Cash_550px.gif" width="30px"> Proyecto: AhorrADAs</h1>
+<h1 align="center"><img src="https://www.bootgum.com/wp-content/uploads/2018/07/Wallet_Cash_550px.gif" width="30px"> Proyecto: AhorrADAs</h1>
 
 ---
 
@@ -8,7 +8,7 @@ h1 <align="center"><img src="https://www.bootgum.com/wp-content/uploads/2018/07/
 
 &nbsp;
 
-<p>👩‍💻 Hecho en equipo, por las alumnas:</p>
+<p>👩‍💻 Realizado por las alumnas:</p>
 
 ```GitHub profiles ↓```
 <ul>
@@ -105,12 +105,11 @@ h1 <align="center"><img src="https://www.bootgum.com/wp-content/uploads/2018/07/
 
 <h4>Herramientas utilizadas:</h4>
 
-|  [VSCode](https://code.visualstudio.com/) 	|  [Git](https://git-scm.com/) 	|   [Font Awesome](https://fontawesome.com/)	|   [unDraw](https://undraw.co/)	|  [Collected Notes](https://collectednotes.com/) 	|
-|---	|---	|---	|---	|---	|
+|  [VSCode](https://code.visualstudio.com/) 	|  [Git](https://git-scm.com/) 	|   [Font Awesome](https://fontawesome.com/)	|  
+|---	|---	|---	|
 
 &nbsp;
 
 ---
 
-<p align="center"><img src="https://media2.giphy.com/media/DEcVhCwLOnayk/giphy.gif?cid=790b7611b2dcf455ee509cbc647af27e5814606fa6e3590b&rid=giphy.gif&ct=g" width="350px"></p>
-&nbsp;
+
