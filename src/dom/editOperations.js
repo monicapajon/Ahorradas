@@ -1,6 +1,6 @@
 const bEditOp = document.body;
 const sectionEditOper = document.createElement("section");
-sectionEditOper.className = "section mt-5 is-hidden vista ";
+sectionEditOper.className = "section mt-5 is-hidden vista";
 sectionEditOper.id = "vista-editar-operacion";
 
 const divContEdOp = document.createElement("div");
@@ -10,8 +10,7 @@ const divColmsEdOp = document.createElement("div");
 divColmsEdOp.className = "columns is-multiline";
 
 const divColEdOp = document.createElement("div");
-divColEdOp.className =
-  "column is-8-widescreen is-10-desktop is-offset-2-widescreen is-offset-1-desktop";
+divColEdOp.className = "column is-8-widescreen is-10-desktop is-offset-2-widescreen is-offset-1-desktop";
 
 const divBoxEdOp = document.createElement("div");
 divBoxEdOp.className = "box";
@@ -58,7 +57,7 @@ montoDivEdOp.className = "is-fullwidth";
 const montoInputEdOp = document.createElement("input");
 montoInputEdOp.className = "input";
 montoInputEdOp.setAttribute("type", "number");
-montoInputEdOp.setAttribute("name", " ");
+montoInputEdOp.setAttribute("name", "");
 montoInputEdOp.id = "editar-monto-input";
 
 // field Tipo

@@ -7,8 +7,7 @@ containerBal.className = "container";
 const DivMainColumns = document.createElement("div");
 DivMainColumns.className = "columns is-multiline";
 const divMainBal = document.createElement("div");
-divMainBal.className =
-  "column is-3-widescreen is-4-desktop is-12-tablet is-offset-1-widescreen";
+divMainBal.className = "column is-3-widescreen is-4-desktop is-12-tablet is-offset-1-widescreen";
 const divBoxBal = document.createElement("div");
 divBoxBal.className = "box";
 divBoxBal.classList.add("box");
@@ -47,7 +46,6 @@ visualTotal.id = "balance";
 visualTotal.innerHTML = "$0";
 
 const divBoxFil = document.createElement("div");
-divBoxFil.className = "box";
 divBoxFil.classList.add("box");
 
 const divColumnFil = document.createElement("div");
@@ -60,10 +58,10 @@ titleFiltro.textContent = "Filtros";
 
 const divAnchorFil = document.createElement("div");
 divAnchorFil.className = "column has-text-right";
-const anchorFiltro = document.createElement("A");
+const anchorFiltro = document.createElement("a");
 anchorFiltro.href = "#";
 anchorFiltro.id = "toggle-filtros";
-anchorFiltro.textContent = "Ocultar Filtros";
+anchorFiltro.textContent = "Ocultar filtros";
 
 const divMainTipo = document.createElement("div");
 divMainTipo.id = "filtros";
@@ -130,9 +128,10 @@ inBalDate.id = "filtro-fecha";
 const divMainOrden = document.createElement("div");
 divMainOrden.className = "field";
 const labelOrden = document.createElement("label");
+labelOrden.className = "label";
 labelOrden.htmlFor = "filtro-orden";
 labelOrden.textContent = "Ordenar por";
-labelOrden.className = "label";
+
 const divControlOrden = document.createElement("label");
 divControlOrden.className = "control";
 const divSelectOrden = document.createElement("div");
@@ -141,7 +140,7 @@ const selectOrden = document.createElement("select");
 selectOrden.id = "filtro-orden";
 const optionMasRe = document.createElement("option");
 optionMasRe.value = "MAS_RECIENTES";
-optionMasRe.textContent = "Mas reciente";
+optionMasRe.textContent = "Más reciente";
 const optionMenosRe = document.createElement("option");
 optionMenosRe.value = "MENOS_RECIENTES";
 optionMenosRe.textContent = "Menos reciente";
@@ -153,10 +152,10 @@ optionMenorMonto.value = "MENOR_MONTO";
 optionMenorMonto.textContent = "Menor monto";
 const optionAZ = document.createElement("option");
 optionAZ.value = "A/Z";
-optionAZ.innerHTML = "A/Z";
+optionAZ.textContent = "A/Z";
 const optionZA = document.createElement("option");
 optionZA.value = "Z/A";
-optionZA.innerHTML = "Z/A";
+optionZA.textContent = "Z/A";
 
 const divMainOperaciones = document.createElement("div");
 divMainOperaciones.className = "column is-7-widescreen is-8-desktop";
@@ -180,8 +179,9 @@ buttonOperacion.textContent = "+ Nueva operación";
 
 const divConOp = document.createElement("div");
 divConOp.id = "con-operaciones";
+divConOp.className = "is-hidden";
 const divFlexOp = document.createElement("div");
-divFlexOp.className = "columns has-text-weight-semibold";
+divFlexOp.className = "columns has-text-weight-semibold is-hidden-mobile";
 const divOpDescripcion = document.createElement("div");
 divOpDescripcion.className = "column is-3";
 divOpDescripcion.textContent = "Descripción";
@@ -212,8 +212,7 @@ imgSinOp.setAttribute("class", "");
 imgSinOp.setAttribute("alt", "");
 const titleSinRes = document.createElement("h4");
 titleSinRes.textContent = "Sin resultados";
-titleSinRes.className =
-  "is-size-4 has-text-centered mt-6 mb-4 has-text-weight-semibold";
+titleSinRes.className = "is-size-4 has-text-centered mt-6 mb-4 has-text-weight-semibold";
 const parrafOp = document.createElement("p");
 parrafOp.className = "has-text-centered";
 parrafOp.textContent = "Cambia los filtros o agrega operaciones";
