@@ -23,7 +23,7 @@ divImgReport.className = "my-6 py-6";
 const figureReport = document.createElement("figure");
 figureReport.className = "image";
 const imgReport = document.createElement("img");
-imgReport.src = "../assets/visualization.svg";
+imgReport.src = "./assets/visualization.svg";
 
 const titleOperInf = document.createElement("h4");
 titleOperInf.className =

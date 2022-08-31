@@ -207,7 +207,7 @@ divImgSinOp.id = "sin-operaciones";
 const figureSinOp = document.createElement("figure");
 figureSinOp.classList.add("image");
 const imgSinOp = document.createElement("img");
-imgSinOp.src = "../assets/shopping.svg";
+imgSinOp.src = "./assets/shopping.svg";
 imgSinOp.setAttribute("class", "");
 imgSinOp.setAttribute("alt", "");
 const titleSinRes = document.createElement("h4");
