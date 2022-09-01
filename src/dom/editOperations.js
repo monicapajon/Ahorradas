@@ -137,7 +137,7 @@ cancelarButtonEdOp.textContent = "Cancelar";
 
 const editarButtonEdOp = document.createElement("button");
 editarButtonEdOp.className = "button is-success";
-editarButtonEdOp.id = "editar-categoria-boton";
+editarButtonEdOp.id = "editar-operacion-boton";
 editarButtonEdOp.textContent = "Editar";
 
 // appendChild

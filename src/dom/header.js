@@ -20,13 +20,15 @@ mainTitle.className = "title is-size-2-desktop is-size-3 has-text-white";
 mainTitle.textContent = " AhorrADAs ";
 
 const divBurger = document.createElement("div");
-divBurger.className = "navbar-burger burger is-active";
+divBurger.id = "responsive-burger";
+divBurger.className = "navbar-burger burger";
 
 const spanBurger1 = document.createElement("span");
 const spanBurger2 = document.createElement("span");
 const spanBurger3 = document.createElement("span");
 
 const divMenu = document.createElement("div");
+divMenu.id = "responsive-navbar-menu";
 divMenu.classList.add("navbar-menu");
 
 const divIcono = document.createElement("div");

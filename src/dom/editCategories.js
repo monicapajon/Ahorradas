@@ -46,6 +46,7 @@ buttonCancel.textContent = "Cancelar";
 const buttonEditCat = document.createElement("button");
 buttonEditCat.className = "button is-success";
 buttonEditCat.id = "editar-categoria-boton";
+buttonEditCat.textContent = "Editar";
 
 bEditCat.appendChild(sectEditCat);
 sectEditCat.appendChild(divContainer);

@@ -45,7 +45,7 @@ sectionResumen.id = "resumen";
 
 const titleResumen = document.createElement("h4");
 titleResumen.className = "title is-size-4 mb-5 pb-4";
-sectionResumen.textContent = "Resumen";
+titleResumen.textContent = "Resumen";
 
 // categoría con mayor ganancia
 const divColums1CatMayGan = document.createElement("div");

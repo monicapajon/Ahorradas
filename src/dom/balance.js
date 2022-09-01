@@ -63,8 +63,9 @@ anchorFiltro.href = "#";
 anchorFiltro.id = "toggle-filtros";
 anchorFiltro.textContent = "Ocultar filtros";
 
-const divMainTipo = document.createElement("div");
-divMainTipo.id = "filtros";
+const divMainFiltros = document.createElement("div");
+divMainFiltros.id = "filtro-all";
+
 const divTipo = document.createElement("div");
 divTipo.className = "field";
 const labelTipo = document.createElement("label");
@@ -77,7 +78,6 @@ const divSelectTipo = document.createElement("div");
 divSelectTipo.className = "select is-fullwidth";
 const selectTipo = document.createElement("select");
 selectTipo.id = "filtro-tipo";
-
 const optionTodos = document.createElement("option");
 optionTodos.value = "TODOS";
 optionTodos.textContent = "Todos";
@@ -235,15 +235,18 @@ divBoxBal.appendChild(divTotal);
 divTotal.appendChild(divTitleTotal);
 divTotal.appendChild(visualTotal);
 
-divMainBal.appendChild(divColumnFil);
+divBoxFil.appendChild(divColumnFil);
 divColumnFil.appendChild(divTitleFiltro);
 divTitleFiltro.appendChild(titleFiltro);
 divColumnFil.appendChild(divAnchorFil);
 divAnchorFil.appendChild(anchorFiltro);
 
 divMainBal.appendChild(divBoxFil);
-divBoxFil.appendChild(divMainTipo);
-divMainTipo.appendChild(divTipo);
+divBoxFil.appendChild(divMainFiltros);
+divMainFiltros.appendChild(divTipo);
+divMainFiltros.appendChild(divMainCategoria);
+divMainFiltros.appendChild(divMainDate);
+divMainFiltros.appendChild(divMainOrden);
 divTipo.appendChild(labelTipo);
 divTipo.appendChild(divControlTipo);
 divControlTipo.appendChild(divSelectTipo);
@@ -252,20 +255,17 @@ selectTipo.appendChild(optionTodos);
 selectTipo.appendChild(optionGast);
 selectTipo.appendChild(optionGanBal);
 
-divBoxFil.appendChild(divMainCategoria);
 divMainCategoria.appendChild(labelCategoria);
 divMainCategoria.appendChild(divControlCat);
 divControlCat.appendChild(divSelectCat);
 divSelectCat.appendChild(selectCat);
 selectCat.appendChild(optionCat);
 
-divBoxFil.appendChild(divMainDate);
 divMainDate.appendChild(labelBalDate);
 divMainDate.appendChild(divBalDate);
 divBalDate.appendChild(divInBalDate);
 divInBalDate.appendChild(inBalDate);
 
-divBoxFil.appendChild(divMainOrden);
 divMainOrden.appendChild(labelOrden);
 divMainOrden.appendChild(divControlOrden);
 divControlOrden.appendChild(divSelectOrden);
